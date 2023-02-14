@@ -1,0 +1,19 @@
+name: misaludapi
+recipe: laravel
+config:
+  webroot: public
+  php: '8.1'
+  database: 'mysql:8.0'
+  xdebug: false
+tooling:
+  npm:
+    service: node
+    cmd: npm
+services:
+  mail:
+    type: mailhog
+    portforward: 1025
+  node:
+    type: node:16
+  database:
+    portforward: 49152
