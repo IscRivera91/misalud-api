@@ -17,3 +17,7 @@ services:
     type: node:16
   database:
     portforward: 49152
+  appserver:
+    overrides:
+      ports:
+        - "0.0.0.0::80"
