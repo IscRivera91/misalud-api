@@ -18,6 +18,7 @@ services:
   database:
     portforward: 49152
   appserver:
+    portforward: 32771
     overrides:
       ports:
         - "0.0.0.0::80"
